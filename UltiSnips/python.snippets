@@ -1,0 +1,38 @@
+snippet future "from __future__ import ..." b
+from __future__ import absolute_import, print_function, division
+endsnippet
+
+snippet react "task.react(main) ..." b
+from twisted.internet import defer, task
+
+
+@defer.inlineCallbacks
+def main(_reactor):
+	${0:pass}
+
+
+if __name__ == '__main__':
+	task.react(main)
+endsnippet
+
+snippet main "if __name__ == '__main__': ..." b
+def main():
+	${0:pass}
+
+
+if __name__ == '__main__':
+	main()
+endsnippet
+
+snippet print "print(...)"
+print(${0:"Dave is the best"})
+endsnippet
+
+snippet fail "self.fail()"
+self.fail(${0:"!!!"})
+endsnippet
+
+snippet test "def test_whatever(self):"
+def test_${0:whatever}(self):
+	self.fail("!!!!")
+endsnippet
