@@ -40,6 +40,8 @@ Plug 'joonty/vim-xdebug'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Yggdroot/indentLine'
 Plug 'blindFS/vim-taskwarrior'
+Plug 'preservim/tagbar'
+Plug 'sjl/splice.vim'
 
 " Initialize plugin system
 call plug#end()
